@@ -1,5 +1,4 @@
 IT Job Vacancies Analysis
-```markdown
 
 This project analyzes IT job vacancies retrieved from the [hh.ru API](https://api.hh.ru/).
 It collects data on IT job listings in Russia (area ID 113), processes the information, and provides insights into job titles,
@@ -19,7 +18,7 @@ salary, location, employment type, and posting date. It also attempts to parse s
    - Trends in remote work based on posting dates.
    - The top 10 locations with the most job listings.
 4. Data Visualization: Generates four plots to illustrate the analysis results.
-```
+
 ## Requirements
 
 - Python 3.x
