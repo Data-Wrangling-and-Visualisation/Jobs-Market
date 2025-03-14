@@ -64,28 +64,20 @@ pip install requests pandas matplotlib seaborn
 The notebook generates four visualizations based on the analysis. Save the plots from the notebook (e.g., using `plt.savefig('plot_name.png')`) and place them in an `images/` directory within the project folder.
 
 ### 1. Top 10 Most Frequent IT Job Titles
-- **File**: `images/top_10_job_titles.png`
-```markdown
-![Top 10 Most Frequent IT Job Titles](images/top_10_job_titles.png)
-```
+![Top 10 Most Frequent IT Job Titles](top_10_job_titles.png)
+
 
 ### 2. Average Salary Range for Different IT Roles
-- **File**: `images/salary_ranges.png`
-```markdown
-![Average Salary Range for Different IT Roles](images/salary_ranges.png)
-```
+![Average Salary Range for Different IT Roles](salary_ranges.png)
+
 
 ### 3. Trends in Remote Work Over Time
-- **File**: `images/remote_work_trends.png`
-```markdown
-![Trends in Remote Work Over Time](images/remote_work_trends.png)
-```
+![Trends in Remote Work Over Time](remote_work_trends.png)
+
 
 ### 4. Top 10 Locations for IT Jobs
-- **File**: `images/top_10_locations.png`
-```markdown
-![Top 10 Locations for IT Jobs](images/top_10_locations.png)
-```
+![Top 10 Locations for IT Jobs](top_10_locations.png)
+
 
 ## Example Insights
 
