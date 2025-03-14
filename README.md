@@ -70,11 +70,7 @@ The notebook generates four visualizations based on the analysis. Save the plots
 ![Average Salary Range for Different IT Roles](salary_ranges.png)
 
 
-### 3. Trends in Remote Work Over Time
-![Trends in Remote Work Over Time](remote_work_trends.png)
-
-
-### 4. Top 10 Locations for IT Jobs
+### 3. Top 10 Locations for IT Jobs
 ![Top 10 Locations for IT Jobs](top_10_locations.png)
 
 
