@@ -1,4 +1,4 @@
-IT Job Vacancies Analysis
+# IT Job Vacancies Analysis
 
 This project analyzes IT job vacancies retrieved from the [hh.ru API](https://api.hh.ru/).
 It collects data on IT job listings in Russia (area ID 113), processes the information, and provides insights into job titles,
