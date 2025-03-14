@@ -1,14 +1,18 @@
-```markdown
 IT Job Vacancies Analysis
+```markdown
 
-This project analyzes IT job vacancies retrieved from the [hh.ru API](https://api.hh.ru/).It collects data on IT job listings in Russia (area ID 113), processes the information, and provides insights into job titles, salary ranges, remote work trends, and geographical distribution. The results are visualized using various plots created with Matplotlib and Seaborn.
+This project analyzes IT job vacancies retrieved from the [hh.ru API](https://api.hh.ru/).
+It collects data on IT job listings in Russia (area ID 113), processes the information, and provides insights into job titles,
+salary ranges, remote work trends, and geographical distribution. The results are visualized using various plots created with
+Matplotlib and Seaborn.
 
 Description
 
 The project is implemented in a Jupyter notebook (`IT_Job_Vacancies_Analysis.ipynb`) and performs the following steps:
 
 1. Data Collection: Retrieves up to 2000 IT job vacancies from the hh.ru API using the `requests` library.
-2. Data Preprocessing: Converts the raw API data into a structured pandas DataFrame, extracting fields like job title, salary, location, employment type, and posting date. It also attempts to parse salary ranges into minimum and maximum values.
+2. Data Preprocessing: Converts the raw API data into a structured pandas DataFrame, extracting fields like job title,
+salary, location, employment type, and posting date. It also attempts to parse salary ranges into minimum and maximum values.
 3. Data Analysis: Computes:
    - The top 10 most frequent job titles.
    - Average minimum and maximum salaries for each job title.
