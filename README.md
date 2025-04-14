@@ -1,38 +1,49 @@
 # IT Job Vacancies Analysis
 
-This project analyzes IT job vacancies retrieved from the [hh.ru API](https://api.hh.ru/).
-It collects data on IT job listings in Russia (area ID 113), processes the information, and provides insights into job titles,
-salary ranges, remote work trends, and geographical distribution. The results are visualized using various plots created with
-Matplotlib and Seaborn.
+This project analyzes IT job vacancies retrieved from the [hh.ru API](https://api.hh.ru/). 
+It collects data on IT job listings in Russia (area ID 113), processes the information, and provides insights into job titles, 
+salary ranges, remote work trends, and geographical distribution. The results are visualized using various plots created with 
+Matplotlib, Seaborn, and now an interactive bubble plot powered by Vite, D3.js, and Flask.
 
 Description
 
 The project is implemented in a Jupyter notebook (`IT_Job_Vacancies_Analysis.ipynb`) and performs the following steps:
 
-1. Data Collection: Retrieves up to 2000 IT job vacancies from the hh.ru API using the `requests` library.
-2. Data Preprocessing: Converts the raw API data into a structured pandas DataFrame, extracting fields like job title,
-salary, location, employment type, and posting date. It also attempts to parse salary ranges into minimum and maximum values.
-3. Data Analysis: Computes:
-   - The top 10 most frequent job titles.
-   - Average minimum and maximum salaries for each job title.
-   - Trends in remote work based on posting dates.
-   - The top 10 locations with the most job listings.
-4. Data Visualization: Generates four plots to illustrate the analysis results.
+1. **Data Collection**:  
+   - Retrieves up to 2000 IT job vacancies from the hh.ru API using the `requests` library.
+   - Due to performance and visualization requirements, a sampled subset of the data may be used for certain visualizations (e.g., the bubble plot).
+
+2. **Data Preprocessing**:  
+   - Converts the raw API data into a structured pandas DataFrame, extracting fields like job title, salary, location, employment type, and posting date.  
+   - Attempts to parse salary ranges into minimum and maximum values.
+
+3. **Data Analysis**:  
+   - Top 10 most frequent job titles.  
+   - Average minimum and maximum salaries for each job title.  
+   - Trends in remote work based on posting dates.  
+   - Top 10 locations with the most job listings.
+
+4. **Data Visualization**:  
+   - Generates multiple plots (via Matplotlib and Seaborn) to illustrate the analysis results.  
+   - Additional interactive bubble chart using D3.js served by a Flask backend.
+
+---
 
 ## Requirements
 
 - Python 3.x
-- Required libraries:
+- Required Python libraries:
   - `requests`
   - `pandas`
   - `matplotlib`
   - `seaborn`
+  - `Flask`
+- Node.js and npm (for Vite-based frontend)
 
-Install the dependencies using pip:
+Install the Python dependencies:
 
 ```bash
-pip install requests pandas matplotlib seaborn
-```
+pip install requests pandas matplotlib seaborn Flask
 
 ## Usage
 
@@ -72,6 +83,25 @@ The notebook generates four visualizations based on the analysis. Save the plots
 
 ### 3. Top 10 Locations for IT Jobs
 ![Top 10 Locations for IT Jobs](top_10_locations.png)
+
+## Interactive Bubble Plot with Vite, D3.js, and Flask
+
+In addition to the static plots, the project includes an interactive bubble chart:
+
+- **Data Sampling**:  
+  A subset of the data is sampled for performance in visualization.
+
+- **Frontend**:  
+  Built with Vite and D3.js for rendering an interactive bubble plot.
+
+- **Backend**:  
+  Flask is used to serve job data as JSON via an API endpoint.
+
+- **Features**:  
+  Each bubble represents a job vacancy, color-coded by city. Users can filter by location using a dropdown menu.
+
+### Screenshot:
+![Job Listings Bubble Chart](images/job_listings_bubble_chart.png)
 
 
 ## Example Insights
