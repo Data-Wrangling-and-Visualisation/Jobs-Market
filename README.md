@@ -101,7 +101,7 @@ In addition to the static plots, the project includes an interactive bubble char
   Each bubble represents a job vacancy, color-coded by city. Users can filter by location using a dropdown menu.
 
 ### Screenshot:
-![Job Listings Bubble Chart](images/job_listings_bubble_chart.png)
+![Job Listings Bubble Chart](job_listings_bubble_chart.png)
 
 
 ## Example Insights
