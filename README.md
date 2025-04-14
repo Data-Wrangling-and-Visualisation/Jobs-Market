@@ -44,7 +44,7 @@ Install the Python dependencies:
 
 ```bash
 pip install requests pandas matplotlib seaborn Flask
-
+```
 ## Usage
 
 1. **Clone the Repository** (if applicable):
@@ -66,6 +66,18 @@ pip install requests pandas matplotlib seaborn Flask
    - Preprocess the data.
    - Analyze the data.
    - Generate and display the plots.
+4. **Run the Bubble Plot Web Application**:
+   
+   Start the Flask Backend:
+   ```bash
+      python app.py
+   ```
+
+   Start the Vite Frontend:
+   ```bash
+      cd frontend
+      npm run dev
+   ```
 
 **Note**: The hh.ru API has a limit of 2000 items per query, so results may vary depending on when the data is retrieved.
 
